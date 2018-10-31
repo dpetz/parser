@@ -1,2 +1,11 @@
-*.class
-*.log
+#  exclude file types and folders that are source
+.class
+.log
+project/
+target/
+lib/
+
+# ignore all hidden files (such as .DS_Store)
+# and hidden folders except this file
+.*
+!/.gitignore
