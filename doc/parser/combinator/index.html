@@ -1,0 +1,389 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Combinatorial Parser  - parser.combinator</title>
+          <meta name="description" content="Combinatorial Parser - parser.combinator" />
+          <meta name="keywords" content="Combinatorial Parser parser.combinator" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../lib/index.js"></script>
+      <script type="text/javascript" src="../../index.js"></script>
+      <script type="text/javascript" src="../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Combinatorial Parser<span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.parser" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parser"></a><a id="parser:parser"></a>
+      <span class="permalink">
+      <a href="index.html#parser" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">parser</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="parser.char" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="char"></a><a id="char:char"></a>
+      <span class="permalink">
+      <a href="../parser/index.html#char" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../char/index.html"><span class="name">char</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="parser">parser</a></dd></dl></div>
+    </li><li name="parser.combinator" visbl="pub" class="indented2 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="combinator"></a><a id="combinator:combinator"></a>
+      <span class="permalink">
+      <a href="../parser/index.html#combinator" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">combinator</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="parser">parser</a></dd></dl></div>
+    </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Gate.html" title=""></a>
+                        <a href="Gate.html" title="">Gate</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="OneOf.html" title="Any character of given set"></a>
+                        <a href="OneOf.html" title="Any character of given set">OneOf</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Optional.html" title="Repeats parsing at least min an at most max."></a>
+                        <a href="Optional.html" title="Repeats parsing at least min an at most max.">Optional</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Or.html" title="Parses p1 if matching otherwise p2"></a>
+                        <a href="Or.html" title="Parses p1 if matching otherwise p2">Or</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Postfix.html" title="Parses p and consumes post."></a>
+                        <a href="Postfix.html" title="Parses p and consumes post.">Postfix</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Prefix.html" title="Consumes pre and parses p"></a>
+                        <a href="Prefix.html" title="Consumes pre and parses p">Prefix</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Repeat.html" title="Repeats parsing at least min an at most max."></a>
+                        <a href="Repeat.html" title="Repeats parsing at least min an at most max.">Repeat</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Then.html" title="Parses p1 followed by p2 and then appends results of p2 to p1."></a>
+                        <a href="Then.html" title="Parses p1 followed by p2 and then appends results of p2 to p1.">Then</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Trans.html" title="Translates Match via function."></a>
+                        <a href="Trans.html" title="Translates Match via function.">Trans</a>
+                      </li><li name="parser.util" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="util"></a><a id="util:util"></a>
+      <span class="permalink">
+      <a href="../parser/index.html#util" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../util/index.html"><span class="name">util</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="parser">parser</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../index.html" class="extype" name="parser">parser</a></p>
+        <h1>combinator<span class="permalink">
+      <a href="../../parser/combinator/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">combinator</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="parser.combinator.Gate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Gate[A,B,C]extendsParser[B]withProductwithSerializable"></a><a id="Gate[A,B,C]:Gate[A,B,C]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Gate[A,B,C]extendsParser[B]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Gate.html"><span class="name">Gate</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="start">start: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Gate.A">A</span>]</span>, <span name="p">p: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Gate.B">B</span>]</span>, <span name="end">end: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Gate.C">C</span>]</span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Gate.B">B</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="parser.combinator.OneOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OneOfextendsParser[Char]withProductwithSerializable"></a><a id="OneOf:OneOf"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#OneOfextendsParser[Char]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Any character of given set" href="OneOf.html"><span class="name">OneOf</span></a><span class="params">(<span name="c">c: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Char">Char</span>]</span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Char">Char</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Any character of given set</p>
+    </li><li name="parser.combinator.Optional" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Optional[A]extendsParser[Seq[A]]withProductwithSerializable"></a><a id="Optional[A]:Optional[A]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Optional[A]extendsParser[Seq[A]]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Repeats parsing at least min an at most max." href="Optional.html"><span class="name">Optional</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p">p: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="parser.combinator.Optional.A">A</span>]]</span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="parser.combinator.Optional.A">A</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Repeats parsing at least <code>min</code> an at most <code>max</code>.</p>
+    </li><li name="parser.combinator.Or" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Or[A]extendsParser[A]withProductwithSerializable"></a><a id="Or[A]:Or[A]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Or[A]extendsParser[A]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Parses p1 if matching otherwise p2" href="Or.html"><span class="name">Or</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p1">p1: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Or.A">A</span>]</span>, <span name="p2">p2: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Or.A">A</span>]</span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Or.A">A</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Parses <a href="Or.html#p1:parser.Parser[A]" class="extmbr" name="parser.combinator.Or#p1">p1</a> if matching otherwise <a href="Or.html#p2:parser.Parser[A]" class="extmbr" name="parser.combinator.Or#p2">p2</a></p>
+    </li><li name="parser.combinator.Postfix" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Postfix[A,B]extendsParser[A]withProductwithSerializable"></a><a id="Postfix[A,B]:Postfix[A,B]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Postfix[A,B]extendsParser[A]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Parses p and consumes post." href="Postfix.html"><span class="name">Postfix</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="p">p: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Postfix.A">A</span>]</span>, <span name="post">post: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Postfix.B">B</span>]</span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Postfix.A">A</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Parses <a href="Postfix.html#p:parser.Parser[A]" class="extmbr" name="parser.combinator.Postfix#p">p</a> and consumes <a href="Postfix.html#post:parser.Parser[B]" class="extmbr" name="parser.combinator.Postfix#post">post</a>.</p>
+    </li><li name="parser.combinator.Prefix" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Prefix[A,B]extendsParser[B]withProductwithSerializable"></a><a id="Prefix[A,B]:Prefix[A,B]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Prefix[A,B]extendsParser[B]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Consumes pre and parses p" href="Prefix.html"><span class="name">Prefix</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="pre">pre: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Prefix.A">A</span>]</span>, <span name="p">p: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Prefix.B">B</span>]</span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Prefix.B">B</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Consumes <a href="Prefix.html#pre:parser.Parser[A]" class="extmbr" name="parser.combinator.Prefix#pre">pre</a> and parses <a href="Prefix.html#p:parser.Parser[B]" class="extmbr" name="parser.combinator.Prefix#p">p</a></p>
+    </li><li name="parser.combinator.Repeat" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Repeat[A]extendsParser[Seq[A]]withProductwithSerializable"></a><a id="Repeat[A]:Repeat[A]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Repeat[A]extendsParser[Seq[A]]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Repeats parsing at least min an at most max." href="Repeat.html"><span class="name">Repeat</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p">p: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="parser.combinator.Repeat.A">A</span>]]</span>, <span name="min">min: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="max">max: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Int.MaxValue</span></span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="parser.combinator.Repeat.A">A</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Repeats parsing at least <code>min</code> an at most <code>max</code>.</p>
+    </li><li name="parser.combinator.Then" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Then[A]extendsParser[Seq[A]]withProductwithSerializable"></a><a id="Then[A]:Then[A]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Then[A]extendsParser[Seq[A]]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Parses p1 followed by p2 and then appends results of p2 to p1." href="Then.html"><span class="name">Then</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p1">p1: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="parser.combinator.Then.A">A</span>]]</span>, <span name="p2">p2: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="parser.combinator.Then.A">A</span>]]</span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="parser.combinator.Then.A">A</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Parses p1 followed by p2 and then appends results of p2 to p1.</p><div class="fullcomment"><div class="comment cmt"><p>Parses p1 followed by p2 and then appends results of p2 to p1. *</p></div></div>
+    </li><li name="parser.combinator.Trans" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Trans[A,B]extendsParser[B]withProductwithSerializable"></a><a id="Trans[A,B]:Trans[A,B]"></a>
+      <span class="permalink">
+      <a href="../../parser/combinator/index.html#Trans[A,B]extendsParser[B]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Translates Match via function." href="Trans.html"><span class="name">Trans</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="p">p: <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Trans.A">A</span>]</span>, <span name="f">f: (<span class="extype" name="parser.combinator.Trans.A">A</span>) ⇒ <span class="extype" name="parser.combinator.Trans.B">B</span></span>)</span><span class="result"> extends <a href="../Parser.html" class="extype" name="parser.Parser">Parser</a>[<span class="extype" name="parser.combinator.Trans.B">B</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Translates <a href="../Match.html" class="extype" name="parser.Match">Match</a> via function.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
