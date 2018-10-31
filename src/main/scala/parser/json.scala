@@ -7,11 +7,12 @@
   */
 package parser
 
+import parser.Parser.Spaces
 import parser.char._
 import parser.combinator._
-import parser.Parser.Spaces
-import scala.util.{Try, Success, Failure}
 import parser.util.{Reader, Tree}
+
+import scala.util.{Failure, Success, Try}
 
 
 /** JSON element. Either [[Lit]] or [[Collection]]. */

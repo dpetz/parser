@@ -1,16 +1,17 @@
 package parser
 
-import parser.util.Reader
-import parser.combinator._
 import parser.char._
+import parser.combinator._
+import parser.util.Reader
 
 /** Produces a [[Result]] from a [[Reader]]. 
- * Subclasses must implement [[Parser(Reader)]].
- * @see [[https://en.wikipedia.org/wiki/Parser_combinator]]
- * @see [[https://en.wikipedia.org/wiki/Left_recursion]]
- */
+  * Subclasses must implement [[Parser(Reader)]].
+  *
+  * @see [[https://en.wikipedia.org/wiki/Parser_combinator]]
+  * @see [[https://en.wikipedia.org/wiki/Left_recursion]]
+  */
 trait Parser[+A] {
-  
+
   /* Parse from character stream. */
   def apply(r: Reader): Result[A]
 
@@ -18,30 +19,33 @@ trait Parser[+A] {
   def apply(s: String): Result[A] = apply(Reader(s))
 
   /** Infix operator for `Then(this,p)`. */
-  def ~[B >: A](p: Parser[B]):Parser[Seq[B]] = Then(this, p)
+  def ~[B >: A](p: Parser[B]): Parser[Seq[B]] = Then(this, p)
 
-  /** Infix operator for `Or(this,p)`. */  
-  def |[B >: A](p: Parser[B]):Parser[B] = Or(this, p)
+  /** Infix operator for `Or(this,p)`. */
+  def |[B >: A](p: Parser[B]): Parser[B] = Or(this, p)
 
-  /** Infix operator for `Trans(this,p)`. */  
-  def >[B](f:A=>B):Parser[B]=Trans(this,f)
+  /** Infix operator for `Trans(this,p)`. */
+  def >[B](f: A => B): Parser[B] = Trans(this, f)
 
 }
 
 
 object Parser {
 
-  val Spaces = Repeat(OneOf(Set('\n','\t',' ','\r')))
+  val Spaces = Repeat(OneOf(Set('\n', '\t', ' ', '\r')))
 
   implicit class Str2Cons(s: String) extends Cons(s)
 
   implicit class Parser2SeqParser[+A](p: Parser[A]) extends Parser[Seq[A]] {
-    def apply(r: Reader) : Result[Vector[A]] = p(r) map { Vector(_) }
+    def apply(r: Reader): Result[Vector[A]] = p(r) map {
+      Vector(_)
+    }
   }
-  def test() : Unit = {
+
+  def test(): Unit = {
     val r = Reader("2017-08-26")
     val p = Repeat(Regex(5)("""\d+-?"""))
     println(p(r).toString)
   }
-  
+
 }

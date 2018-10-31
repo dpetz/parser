@@ -3,12 +3,12 @@ import parser._
 //import io.parse.Match
 
 /**
- * @see [[http://www.scalatest.org/user_guide]]
- */
+  * @see [[http://www.scalatest.org/user_guide]]
+  */
 class json extends FlatSpec with OptionValues with Matchers {
 
-  def parse(s:String): Unit = {
-    Json(s).toString should equal (s)
+  def parse(s: String): Unit = {
+    Json(s).toString should equal(s)
   }
 
 
@@ -20,7 +20,7 @@ class json extends FlatSpec with OptionValues with Matchers {
   }
 
   it should "contain JSON literal 10" in {
-    arr.values should contain (Num(10))
+    arr.values should contain(Num(10))
   }
 
 
@@ -32,45 +32,44 @@ class json extends FlatSpec with OptionValues with Matchers {
 
     mat.values.length should be > 10
 
-}
+  }
 
-"Object" should "be parsed with different values and a nested object." in {
+  "Object" should "be parsed with different values and a nested object." in {
 
-  val obj = Json(
-    """{
-      |  "Herausgeber": "Xema",
-      |  "Nummer": "1234-5678-9012-3456",
-      |  "Deckung": 2e+6,
-      |  "Waehrung": "EURO",
-      |  "Inhaber":
-      |  {
-      |    "Name": "Mustermann",
-      |    "Vorname": "Max",
-      |    "maennlich": true,
-      |    "Hobbys": [ "Reiten", "Golfen", "Lesen" ],
-      |    "Alter": 42,
-      |    "Kinder": [],
-      |    "Partner": null
-      |  }
-      |}
-    """.stripMargin
-).asInstanceOf[Obj].values should have size 5
+    val obj = Json(
+      """{
+        |  "Herausgeber": "Xema",
+        |  "Nummer": "1234-5678-9012-3456",
+        |  "Deckung": 2e+6,
+        |  "Waehrung": "EURO",
+        |  "Inhaber":
+        |  {
+        |    "Name": "Mustermann",
+        |    "Vorname": "Max",
+        |    "maennlich": true,
+        |    "Hobbys": [ "Reiten", "Golfen", "Lesen" ],
+        |    "Alter": 42,
+        |    "Kinder": [],
+        |    "Partner": null
+        |  }
+        |}
+      """.stripMargin
+    ).asInstanceOf[Obj].values should have size 5
 
-}
-
-
-
-/*
+  }
 
 
-  println(
-    Or(
-      Cons("A"),
-      Or(Cons("B"),Cons("CCC")))
-    ("D")
-  )
+  /*
 
-  println(Cons("XX")("X"))
-*/
+
+    println(
+      Or(
+        Cons("A"),
+        Or(Cons("B"),Cons("CCC")))
+      ("D")
+    )
+
+    println(Cons("XX")("X"))
+  */
 
 }
