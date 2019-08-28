@@ -67,7 +67,7 @@ sealed trait Lit[A] extends Json {
 }
 
 /** JSON number literal. */
-case class Num(value: Double) extends Lit[Double] {
+case class Num(value: BigDecimal) extends Lit[BigDecimal] {
   override def toString: String = value.toString
 
   override def toNum = Success(this)
@@ -75,7 +75,7 @@ case class Num(value: Double) extends Lit[Double] {
 
 /** Provides constructor from [[String]] */
 object Num {
-  def apply(s: String): Num = Num(s.toDouble)
+  def apply(s: String): Num = Num(BigDecimal(s))
 }
 
 /** JSON string literal */
@@ -118,6 +118,7 @@ object Json {
     val num: Parser[Num] = Regex(25)("""[\d-+.eE]+""") > {
       Num(_)
     }
+    // TODO support all of https://tools.ietf.org/html/rfc7159#section-6
 
     /** Parses string values.
       *

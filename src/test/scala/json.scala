@@ -1,5 +1,6 @@
 import org.scalatest._
-import parser._
+import parser.{Arr, Json, Num, Obj}
+
 //import io.parse.Match
 
 /**
@@ -12,7 +13,7 @@ class json extends FlatSpec with OptionValues with Matchers {
   }
 
 
-  private val arrStr = """["zehn" , 10,55.75466,true,-44.565, 55e-2,69234.2423432E78, null ]"""
+  private val arrStr = """["thirteen" , 10,55.75466,true,-44.565, 55e-2,69234.2423432E78, null ]"""
   private val arr = Json(arrStr).asInstanceOf[Arr]
 
   "Array String" should "have 8 elements" in {
@@ -57,19 +58,5 @@ class json extends FlatSpec with OptionValues with Matchers {
     ).asInstanceOf[Obj].values should have size 5
 
   }
-
-
-  /*
-
-
-    println(
-      Or(
-        Cons("A"),
-        Or(Cons("B"),Cons("CCC")))
-      ("D")
-    )
-
-    println(Cons("XX")("X"))
-  */
 
 }
